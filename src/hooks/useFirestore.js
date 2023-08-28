@@ -1,5 +1,6 @@
 import { useReducer, useEffect, useState } from "react"
 import { projectFirestore, timestamp } from "../firebase/config"
+import { toast } from "react-toastify";
 
 let initialState = {
   document: null,  isPending: false,  error: null,  success: null,
@@ -44,6 +45,7 @@ export const useFirestore = (collection) => {
       const createdAt = timestamp.fromDate(new Date())
       const addedDocument = await ref.add({ ...doc, createdAt })
       dispatchIfNotCancelled({ type: "ADDED_DOCUMENT", payload: addedDocument })
+      toast.success("One document has been added")
     }
     catch (err) {
       dispatchIfNotCancelled({ type: "ERROR", payload: err.message })
@@ -72,6 +74,7 @@ export const useFirestore = (collection) => {
       {
       const deleteDocument = await ref.doc(id).delete()
       dispatchIfNotCancelled({ type: 'DELETED_DOCUMENT', payload: deleteDocument })
+      toast.warn("One document has been deleted")
       }
     }
     catch (err) {

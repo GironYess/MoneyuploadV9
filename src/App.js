@@ -11,6 +11,9 @@ import Recipe from './pages/recipe/Recipe'
 import Create from './pages/create/Create'
 import Edit from './pages/edit/Edit'
 import Navbar from './components/Navbar'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   const { authIsReady, user } = useAuthContext()
@@ -48,8 +51,24 @@ function App() {
             </Route>
           </Switch>
         </BrowserRouter>
+
+        <ToastContainer
+        position="bottom-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+        />
+
     </div>
   );
 }
+
+
 
 export default App

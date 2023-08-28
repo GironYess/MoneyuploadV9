@@ -1,9 +1,9 @@
 .navbar {
     width: 100%;
-    background: #effaf0;
+    background: lightblue;
     padding: 20px 10px;
     box-sizing: border-box;
-    border-bottom-color: green;
+    border-bottom-color: darkgreen;
     border-bottom-style: outset;
   }
   .navbar ul {
@@ -26,6 +26,14 @@
     text-decoration: none;
   }
   .navbar a:hover {
-    color: red;
+    color: darkred;
     text-decoration: none;
+  }
+  @media screen and (max-width: 576px) {
+    .title {
+      visibility: hidden;
+    }
+    .navbar {    
+      padding: 5px 10px;      
+    }
   }

@@ -1,5 +1,5 @@
 h3 {
-    color: red;
+    color: darkred;
 }
 .container {
     display: grid;  grid-template-columns: 2fr 1fr;  max-width: 960px;  margin: 60px auto;
@@ -24,7 +24,7 @@ h3 {
     color: #fff;  border: 2px solid #fff;  padding: 6px 12px;  background-color: transparent;  font-size: 1em;  border-radius: 4px;  cursor: pointer;  display: block;  width: 100%;
   }
   .sidebar h3 {
-    color: #1f9751;
+    color: lightblue;
     margin-bottom: 20px;
   }
   .sidebar aside {
@@ -35,7 +35,7 @@ h3 {
     margin: 10px;
   }
   .sidebar button:hover {  
-    background-color: blue;  
+    background-color: darkblue;  
   }
   /* transactions */
   .transactions li {
@@ -49,7 +49,7 @@ h3 {
     color: #777;  font-size: 1.4em;
   }
   .transactions .name:hover {
-    color: green; font-weight: bold;  
+    color: darkgreen; font-weight: bold;  
   }
   .transactions .amount {
     margin-left: auto;  margin-right: 40px;  color: #777;  font-weight: bold;  font-size: 1.6em;
@@ -58,7 +58,7 @@ h3 {
     position: absolute;  top: 0;  right:0;  background: #ddd;  color: #777;  border: none;  padding: 12px 8px;  text-align: center;  line-height: 0;  font-size: 0.9em;  cursor: pointer;
   }
   .transactions button:hover {
-    background-color: red; color: white; font-weight: bold;
+    background-color: darkred; color: white; font-weight: bold;
   }
   @media screen and (max-width: 768px) {
     .container {
@@ -72,10 +72,10 @@ h3 {
       margin: 0 0 0 0; font-size: small;
     }
     .sidebar form {
-      padding: 20px;  background: blue;  border-radius: 10px; width: 86%;
+      padding: 20px;  background: darkblue;  border-radius: 10px; width: 86%;
     }
     h3 {
-      color: red;padding-top: 20px;
+      color: darkred;padding-top: 20px;
       
     }
     .content {
@@ -85,7 +85,7 @@ h3 {
       margin-top: 20px;
     }
     .transactions li {
-      border-left: 7px solid blue; height: 18px;
+      border-left: 7px solid darkblue; height: 18px;
     }
    
   }
